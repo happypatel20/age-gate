@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Age Gate</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="hidden">
+  <!-- Banner Section -->
+  <section class="banner">
+    <header class="header">
+      <div class="container">
+          <img src="images/beer.png" class="logo" alt="isro logo">
+        <ul class="nav hidden-sm">
+          <li class="nav-item"><a href="#" class="nav-link" aria-current="page">Home</a></li>
+          <li class="nav-item"><a href="#About" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#BeerOnTap" class="nav-link">Beer On Tap</a></li>
+          <li class="nav-item"><a href="#BeerToGo" class="nav-link">Beer To-Go</a></li>
+        </ul>
+        <button class="hamburger_menu" id="hamburgerMenu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M21.375 12C21.375 12.2984 21.2565 12.5845 21.0455 12.7955C20.8345 13.0065 20.5484 13.125 20.25 13.125H3.75C3.45163 13.125 3.16548 13.0065 2.9545 12.7955C2.74353 12.5845 2.625 12.2984 2.625 12C2.625 11.7016 2.74353 11.4155 2.9545 11.2045C3.16548 10.9935 3.45163 10.875 3.75 10.875H20.25C20.5484 10.875 20.8345 10.9935 21.0455 11.2045C21.2565 11.4155 21.375 11.7016 21.375 12ZM3.75 7.125H20.25C20.5484 7.125 20.8345 7.00647 21.0455 6.7955C21.2565 6.58452 21.375 6.29837 21.375 6C21.375 5.70163 21.2565 5.41548 21.0455 5.2045C20.8345 4.99353 20.5484 4.875 20.25 4.875H3.75C3.45163 4.875 3.16548 4.99353 2.9545 5.2045C2.74353 5.41548 2.625 5.70163 2.625 6C2.625 6.29837 2.74353 6.58452 2.9545 6.7955C3.16548 7.00647 3.45163 7.125 3.75 7.125ZM20.25 16.875H3.75C3.45163 16.875 3.16548 16.9935 2.9545 17.2045C2.74353 17.4155 2.625 17.7016 2.625 18C2.625 18.2984 2.74353 18.5845 2.9545 18.7955C3.16548 19.0065 3.45163 19.125 3.75 19.125H20.25C20.5484 19.125 20.8345 19.0065 21.0455 18.7955C21.2565 18.5845 21.375 18.2984 21.375 18C21.375 17.7016 21.2565 17.4155 21.0455 17.2045C20.8345 16.9935 20.5484 16.875 20.25 16.875Z" fill="#FFF"/>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <div class="container">
+      <div class="col-12 content_wrap">
+        <h1>Hops & Barley Brewery</h1>
+        <a href="#!" target="_blank" class="btn-primary text-xs btn-discover">Discover More</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container flex-column">
+      <div class="footer_links">
+        <a href="#!" class="text-sm"> Terms of Use </a>
+        <a href="#!" class="text-sm"> Privacy Policy </a>
+      </div>
+      <p class="mb-0">&copy; Copyright 2024 <strong>Brewery</strong>. All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <div id="ageGate" class="modal" style="display: none;">
+ 
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Welcome to Riverstone Brewery!</h2>
+      </div>
+      <div class="modal-header error" id="errorMessage" style="display: none;">
+          <p>Sorry! </p>
+          <p>You are not old enough to view this content</p>
+      </div>
+      <div class="modal-body">
+        <img src="images/ageVerification.svg" class="age_icon" alt="">
+        <h3>Before entering, please confirm your age by entering your Birthdate</h3>
+        <form id="ageForm" class="age-check-form">
+            <!-- <label class="input-label" for="birthdate">Birth Date:</label> -->
+            <input type="date" id="birthdate" name="birthdate" required>
+            <label class="check-wrapper">
+                <input type="checkbox" class="checkbox" id="rememberMe">
+                <span class="check-icon"></span>
+                <span class="check-label">Remember me</span>
+            </label>
+            <br>
+            <button type="submit" class="btn-primary">Verify</button>
+        </form>
+        <!-- <div class="check-wrapper">
+          <input type="checkbox" class="checkbox" id="${inputVal}">
+          <span class="task-name">${inputVal}</span>
+          <label for="${inputVal}"></label>
+        </div> -->
+      </div>
+    </div>
+  
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
