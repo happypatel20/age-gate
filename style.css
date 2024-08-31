@@ -84,7 +84,7 @@ ul {
 
 /* Sections */
 .banner {
-  background: url(./images/bar10.jpg) no-repeat;
+  background: url("images/bar10.jpg") no-repeat;
   background-size: cover;
   background-attachment: fixed;
   color: #fff;
@@ -258,7 +258,7 @@ footer {
 .hidden:after {
   content: '';
   /* background: #00000087; */
-  background: url(/images/home-bg.jpg);
+  background: url("images/home-bg.jpg");
   background-size: 100%;
   width: 100%;
   height: 100%;
@@ -376,7 +376,7 @@ footer {
 }
 .check-wrapper .checkbox:checked + .check-icon {
   border-color: #FF6363;
-  background: url(/images/check.svg) no-repeat;
+  background: url("images/check.svg") no-repeat;
   background-position: center;
   background-size: 82%;
 }
