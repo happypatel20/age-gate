@@ -68,7 +68,10 @@ function getAgeInYears(birthdate) {
   let age = today.getFullYear() - birthdateInput.getFullYear();
   const monthDiff = today.getMonth() - birthdateInput.getMonth();
 
-  if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthdateInput.getDate())) {
+  if (
+    monthDiff < 0 ||
+    (monthDiff === 0 && today.getDate() < birthdateInput.getDate())
+  ) {
     age--;
   }
 
