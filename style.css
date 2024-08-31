@@ -230,17 +230,18 @@ h2 {
   display: none;
   position: fixed;
   z-index: 1;
-  padding: 6.25rem 0;
+  padding: 1rem 0;
   left: 50%;
   transform: translateX(-50%);
   top: 0;
   width: 85%;
   overflow: auto;
   z-index: 3;
-  -webkit-animation: animatetop 0.4s;
-  animation: animatetop 0.4s;
   height: 100%;
   overflow: auto;
+  align-items: center;
+  -webkit-animation: animatetop 0.4s forwards;
+  animation: animatetop 0.4s forwards;
 }
 .modal-content {
   position: relative;
