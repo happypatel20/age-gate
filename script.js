@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (isAgeVerified === "true") {
     showHomepage();
   } else {
-    ageGate.style.display = "block";
+    ageGate.style.display = "flex";
 
     if (isAgeVerified === "false") {
       errorMessage.style.display = "flex";
